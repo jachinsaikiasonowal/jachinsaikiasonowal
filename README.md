@@ -18,11 +18,11 @@
 .....-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@0.....        . Email.Personal: ......... jachinchsaikiasonowal@gmail.com
 .....=@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+.....        . LinkedIn: ................. in/jachinsaikiasonowal
 .....=oO0@@@@@@@@@@@@@@@@@@@@@@#oo+o=.....        . Instagram: ................ @jachinsaikiasonowal
-.....=++o@@@@@@@@@@@@@@@@@@@@@@#o===-....         . Newsletter: ............... ainewsindia.beehiiv.com
+.....=++o@@@@@@@@@@@@@@@@@@@@@@#o===-....         . Newsletter: ............... matrixlabs.beehiiv.com/subscribe
 ....:+O0#@@@@@@@@@@@@@@@@@@@@@@@#0o=-....         . PromptMatrix: ............. promptmatrix.github.io
 ....=+o@@o@@@@@@@@@@@@@@@@@@@@@0@@o+=.....
 ...:+++##+@@@@@@@@@@@@@@@@@@@@@=O#+++:....        - GitHub Stats ────────────────────────────────────────────
-...-o++@o0@@@@@@@@@@@@@@@@@@@@@000ooo:....        . Repos: ......... 2 {+ PromptMatrix Org}   Stars: ........ ★
+...-o++@o0@@@@@@@@@@@@@@@@@@@@@000ooo:....        . Repos: .........  { PromptMatrix Org}   Stars: ........ ★
 ...=O+o@+@@@@@@@@@@@@@@@@@@@@@@@#oooo.....        . AI Agents Live: .............. 25+   Clients: ....... 175+
                                                   . Revenue Generated: ....... $145K+   GitHub LOC: ... always↑
 ```
