@@ -59,7 +59,7 @@ I design and ship **AI-native revenue systems** — the kind that compound witho
 
 ---
 
-## 🧠 JACHIN OS — My Personal AI Operating System
+## 🧠 SON OF ANTON OS — My Personal AI Operating System
 
 A 25+ agent system I built and run in live production. Six departments, one master router, zero manual bottlenecks.
 
