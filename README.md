@@ -1,30 +1,28 @@
 ```
-                                       jachin@sonowal
-                                        . OS: ........................ Debian Linux, Windows 11 Pro (WSL2)
-                                        . Uptime: .................... 8 years, 4 months active uptime
-              .1UCc-                    . Host: ...................... Matrix Labs (Assam, India)
-             I0oM**oh-                  . Kernel: .................... Growth & AI Systems Architect
-             O8$@@B%%8                  . IDE: ....................... VSCode 1.96.0, Cursor, Claude Code, n8n
-            I&$$$$$@$$[                
-            l@w0dwY/U@Z                 . Languages.Programming: ..... Python, C (C99/C11), JavaScript, TypeScript
-            IM()1[~i~p%                 . Languages.Systems: ......... RISC-V Assembly, Bash, x86_64, Linux IPC
-            ^w11}]__+zM                 . Languages.AI: .............. Claude 3.7, Gemini 2.5, GPT-4o, DeepSeek
-             C|(1)]]]xQ                 . Languages.Real: ............ English, Assamese, Hindi
-             Ujcrunrjtr                
-             fzbwnpbn|-                 . Hobbies.Software: .......... PromptMatrix Core, AI Agent Swarms, LLMOps
-            }tUdZj0dY\t                 . Hobbies.Hardware: .......... Baremetal RISC-V, CPU Simulator, Overclocking
-            \)(rr-\\]-r                
-            ]frjx{|r\(|                 Contact
-             tzxOkZXvr>                 . Email.Personal: ............ jachinsaikiasonowal@gmail.com
-             >XcYJUJC1                  . Portfolio: ................. matrixlabsagency.netlify.app
-             `J#M&##0~                  . LinkedIn: .................. linkedin.com/in/jachinsaikiasonowal
-              Qbo#bmw"                  . X / Twitter: ............... x.com/jachinosonowal
-              xbdbOqb'                  . Newsletter: ................ matrixlabs.beehiiv.com
-              \WBBBBm.                  . PromptMatrix: .............. promptmatrix.github.io
-              /h%$@*X1                 
-             "LZaWaQurz                 GitHub Stats
-            "bUOb*qJvZ$Z:               . Repos: .... 19 {PromptMatrix + Systems} | Stars: .......... 150+
-           x@$OOdomLp$$$&u              . Commits: ................. 1,480+ | AI Swarms Live: ......... 25+
-         \#$$$@hmhq*$$$$@Mq+            . Impact: ................... $145K+ Launch ARR | 2.5M+ Campaign Reach
-       -hW$$$$$$@@$$$$$$$BMaX           . Lines of Code on GitHub: .. 124,580 ( 142,190++, 17,610-- )
+...........................................  jachinsaikiasonowal ----------------------------------------------------
+.................:=o##880#0o...............  OS: ..................................................... Debian Linux
+..............=o@@@@@@@@@@@@@0.............  Uptime: ................................................. 8+ years, still up
+.............0@@@@@@@@@@@@@@@@@=...........  Host: ................................................... Assam, India
+.............@@@@0888#@##00#@@@o...........  Kernel: ................................................. Growth Systems Architect
+............=@@=-:...........8@-...........  IDE: .................................................... VSCode, Cursor, Claude Code, n8n
+............-@=:--:......::-:o@............
+.............@0+--:..::...:--oo............  Languages.Code: ......... Python, JavaScript, HTML, CSS, Bash
+............-8##80##o==08o+0oo+............  Languages.AI: ........... LLM APIs, Prompt Eng, n8n, Make.com
+............08-+8#oo8:+o8@0o-=+-...........  Languages.Real: ......... English, Assamese, Hindi
+............=0=:::.--.:-.:..:=-............
+.............+@0+=+8+:-+=-==oo.............  Hobbies.Software: ....... AI Agent Systems, Growth Automation
+..............8#=:.o##0+..-=0=.............  Hobbies.Building: ....... PromptMatrix, Newsletter, SaaS Tools
+...............@@@@@+=+88#+0o..............  Hobbies.Other: .......... Marketing Systems, Revenue Ops, SEO
+...............-@@08@##00#@#...............
+............-+#8@@@88800#@8o...............  - Contact
+......-+8@@@@@@008@@@@@@#o--=0=............    Email.Personal: ....... jachinsaikiasonowal@gmail.com
+..=8@@@@@@@@@@@@8=+@@@o=-::o@@@@@8+:.......    LinkedIn: ............. in/jachinsaikiasonowal
+=@@@@@@@@@@@@@@@@@++o+o8@@@@@@@@@@@@@=---..    Instagram: ............ @jachinsaikiasonowal
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#.    Newsletter: ........... matrixlabs.beehiiv.com/subscribe
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+    PromptMatrix: ......... promptmatrix.github.io
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  - GitHub Stats
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    Repos: .............. (PromptMatrix Org)  Stars: ........ *
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    AI Agents Live: ..... 25+                 Clients: ...... 175+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    Revenue Generated: .. $145K+              GitHub LOC: ... always!
 ```
