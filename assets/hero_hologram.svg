@@ -138,9 +138,8 @@
 
     <!-- Central Role & Architectural Tag -->
     <g transform="translate(50, 72)">
-      <!-- Main Role Title -->
-      <text x="0" y="28" class="sans-font" font-size="27" font-weight="800" fill="#ffffff" letter-spacing="-0.3">
-        Growth Systems Architect <tspan fill="#00f2fe">&amp;</tspan> Software Engineer
+      <text x="0" y="28" class="sans-font" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="-0.3">
+        Growth Systems Architect
       </text>
 
       <!-- Subtitle -->

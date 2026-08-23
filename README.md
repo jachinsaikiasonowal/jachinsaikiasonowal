@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://matrixlabsagency.netlify.app">
-    <img src="./assets/hero_hologram.svg" alt="Growth Systems Architect & Software Engineer" width="100%">
+    <img src="./assets/hero_hologram.svg" alt="Growth Systems Architect" width="100%">
   </a>
 </p>
 
