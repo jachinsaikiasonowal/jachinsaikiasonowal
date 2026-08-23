@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="100%" height="100%">
+  <defs>
+    <radialGradient id="termBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#060c1c" stop-opacity="0.98"/>
+      <stop offset="70%" stop-color="#02050e" stop-opacity="0.99"/>
+      <stop offset="100%" stop-color="#010206" stop-opacity="1"/>
+    </radialGradient>
+
+    <linearGradient id="termCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <filter id="termGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="termClip">
+      <rect x="0" y="0" width="1100" height="520" rx="12" ry="12"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    @keyframes termCursor {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.15; }
+    }
+    @keyframes scanMatrix {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(520px); }
+    }
+    @keyframes glowLine {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 0.9; }
+    }
+
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
+    .cursor-blink { animation: termCursor 1.5s ease-in-out infinite; }
+    .glow-accent { animation: glowLine 3s ease-in-out infinite; }
+  </style>
+
+  <g clip-path="url(#termClip)">
+    <rect width="1100" height="520" fill="url(#termBg)"/>
+
+    <!-- Terminal Window Top Bar -->
+    <rect x="0" y="0" width="1100" height="42" fill="#0c1529" stroke="#1e293b" stroke-width="1"/>
+    
+    <!-- Window Control Buttons (macOS style) -->
+    <circle cx="24" cy="21" r="6" fill="#ef4444"/>
+    <circle cx="44" cy="21" r="6" fill="#f59e0b"/>
+    <circle cx="64" cy="21" r="6" fill="#10b981"/>
+
+    <!-- Window Title -->
+    <text x="550" y="26" text-anchor="middle" class="mono" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="1">
+      ⚡ jachin@matrix-node:~ (RV32I · PROMPTMATRIX · MULTI-AGENT SWARMS)
+    </text>
+
+    <!-- Window Splitter Line -->
+    <line x1="330" y1="42" x2="330" y2="520" stroke="#1e293b" stroke-width="1.2"/>
+
+    <!-- ==================== LEFT PANE: CYBER ASCII LOGO & AVATAR ==================== -->
+    <g transform="translate(24, 65)">
+      <!-- Hologram Box -->
+      <rect width="284" height="425" rx="8" fill="#030814" stroke="#0284c7" stroke-width="1" opacity="0.8"/>
+      
+      <!-- ASCII Artwork Lines -->
+      <g class="mono" font-size="10.5" fill="#00f2fe" opacity="0.9" font-weight="600">
+        <text x="18" y="32">         ;v0%QE#bwf?;         </text>
+        <text x="18" y="48">      vbQ888g88g8gQ&amp;Efl       </text>
+        <text x="18" y="64">     p888888M88888Mg%MW&gt;      </text>
+        <text x="18" y="80">    i88888888888888888gM:     </text>
+        <text x="18" y="96">   &lt;M888ggg88888%E@s88g8j     </text>
+        <text x="18" y="112">   W88H`  .---..---.  `X88p   </text>
+        <text x="18" y="128">  .88b` /{{]99  99[}}\ `q8X   </text>
+        <text x="18" y="144">   EMu [-( 89 == 89 )-] !8t   </text>
+        <text x="18" y="160">   qMj \_(`00 == 00`)_/ &lt;M:   </text>
+        <text x="18" y="176">   !Wm`   `"      "`   :O     </text>
+        <text x="18" y="192">   cbp`     |    |     lz"    </text>
+        <text x="18" y="208">  fEnX      |/\  |     !?u.   </text>
+        <text x="18" y="224">  c8j-    .wWW##WWw.   jx     </text>
+        <text x="18" y="240">  &lt;spf  _m#BBWWWWBB#m_ :I"    </text>
+        <text x="18" y="256">   tH$X  `"wwwwwwww"` ~"      </text>
+        <text x="18" y="272">    :&$bv   `====`  ,:~&gt;      </text>
+        <text x="18" y="288">     OWHqr   `..`   .`,&gt;^     </text>
+        <text x="18" y="304">     ~%sg88; |  | ;i+         </text>
+        <text x="18" y="320">      m88888%||jkk11`|[[      </text>
+        <text x="18" y="336">      &lt;8g&amp;E&amp;&amp;|||||||||||      </text>
+        <text x="18" y="352">    &lt;1p&amp;8M&amp;QQ\kkk%k%k%i`!,[   </text>
+        <text x="18" y="368"> cq#g8MK@&amp;8888|||j**```;i[    </text>
+      </g>
+
+      <!-- Status Footer in Left Box -->
+      <rect x="18" y="386" width="248" height="24" rx="4" fill="#081e36" stroke="#00f2fe" stroke-width="0.8"/>
+      <text x="142" y="402" text-anchor="middle" class="mono" font-size="9.5" font-weight="700" fill="#38bdf8" letter-spacing="1">
+        JACHIN // MATRIX LABS KERNEL
+      </text>
+    </g>
+
+    <!-- ==================== RIGHT PANE: NEOFETCH & SYSTEM METRICS ==================== -->
+    <g transform="translate(355, 65)">
+      <!-- Command line -->
+      <text x="0" y="20" class="mono" font-size="13" font-weight="700" fill="#38bdf8">
+        jachin@matrix-control <tspan fill="#64748b">----------------------------------------------------</tspan>
+      </text>
+
+      <!-- System Props List -->
+      <g transform="translate(0, 42)" class="mono" font-size="11.5">
+        <!-- Prop 1 -->
+        <text x="0" y="0" fill="#00f2fe" font-weight="700">. OS:</text>
+        <text x="185" y="0" fill="#f8fafc">Linux (Debian/Ubuntu), Windows 11 (WSL2), Vercel Edge</text>
+
+        <!-- Prop 2 -->
+        <text x="0" y="24" fill="#00f2fe" font-weight="700">. Host:</text>
+        <text x="185" y="24" fill="#f8fafc">Matrix Labs // Guwahati, Assam · Global Remote</text>
+
+        <!-- Prop 3 -->
+        <text x="0" y="48" fill="#00f2fe" font-weight="700">. Kernel Profile:</text>
+        <text x="185" y="48" fill="#34d399" font-weight="600">Cognitive Architect &amp; AGI Swarm Systems Lead</text>
+
+        <!-- Prop 4 -->
+        <text x="0" y="72" fill="#00f2fe" font-weight="700">. Field Uptime:</text>
+        <text x="185" y="72" fill="#fbbf24">8+ Years Production Engineering (Revenue &amp; Infrastructure)</text>
+
+        <!-- Prop 5 -->
+        <text x="0" y="96" fill="#00f2fe" font-weight="700">. IDE &amp; Automation:</text>
+        <text x="185" y="96" fill="#cbd5e1">Cursor, VS Code, Claude Code, Antigravity, n8n, Make</text>
+
+        <!-- Divider 1 -->
+        <text x="0" y="122" fill="#334155">- Languages &amp; Computing -------------------------------------------</text>
+
+        <!-- Prop 6 -->
+        <text x="0" y="146" fill="#c084fc" font-weight="700">. Languages.Code:</text>
+        <text x="185" y="146" fill="#f8fafc">Python, TypeScript, JavaScript (ES6+), C99, SQL</text>
+
+        <!-- Prop 7 -->
+        <text x="0" y="170" fill="#c084fc" font-weight="700">. Languages.Silicon:</text>
+        <text x="185" y="170" fill="#f8fafc">RISC-V RV32I Assembly, POSIX IPC, Bash Shell</text>
+
+        <!-- Prop 8 -->
+        <text x="0" y="194" fill="#c084fc" font-weight="700">. AI Models &amp; Swarms:</text>
+        <text x="185" y="194" fill="#f8fafc">PROMPTMATRIX, Claude 3.7, Gemini 2.5, GPT-4o, DeepSeek</text>
+
+        <!-- Divider 2 -->
+        <text x="0" y="220" fill="#334155">- Production Impact &amp; Field Telemetry -----------------------------</text>
+
+        <!-- Prop 9 -->
+        <text x="0" y="244" fill="#34d399" font-weight="700">. Production Pipeline:</text>
+        <text x="185" y="244" fill="#34d399" font-weight="700">$2.5M+ Verified Revenue | 3.8x Aggregate ROAS</text>
+
+        <!-- Prop 10 -->
+        <text x="0" y="268" fill="#34d399" font-weight="700">. Active AI Swarms:</text>
+        <text x="185" y="268" fill="#38bdf8">25+ Nodes Live in Production (&lt;90s Dispatch)</text>
+
+        <!-- Prop 11 -->
+        <text x="0" y="292" fill="#34d399" font-weight="700">. Prompt Latency:</text>
+        <text x="185" y="292" fill="#00f2fe">Sub-5ms Serving via Zero-Alloc Dynamic Cache</text>
+
+        <!-- Prop 12 -->
+        <text x="0" y="316" fill="#34d399" font-weight="700">. Open Source Packages:</text>
+        <text x="185" y="316" fill="#c084fc">promptmatrix, promptmatrix-cli (PyPI / GitHub)</text>
+
+        <!-- Divider 3 -->
+        <text x="0" y="342" fill="#334155">- Signal Transmission Channels ------------------------------------</text>
+
+        <!-- Prop 13 -->
+        <text x="0" y="366" fill="#fbbf24" font-weight="700">. Email &amp; Inquiries:</text>
+        <text x="185" y="366" fill="#f8fafc">jachinsaikiasonowal@gmail.com</text>
+
+        <!-- Prop 14 -->
+        <text x="0" y="390" fill="#fbbf24" font-weight="700">. Portfolio OS &amp; Pub:</text>
+        <text x="185" y="390" fill="#f8fafc">jachinsaikiasonowal.vercel.app · matrixlabs.beehiiv.com</text>
+      </g>
+
+      <!-- Blinking Shell Cursor -->
+      <rect x="670" y="452" width="10" height="18" fill="#00f2fe" class="cursor-blink"/>
+    </g>
+
+    <!-- Terminal Perimeter Glow Frame -->
+    <rect x="1" y="1" width="1098" height="518" rx="11" ry="11" fill="none" stroke="#1e3a5f" stroke-width="1.2"/>
+  </g>
+</svg>
