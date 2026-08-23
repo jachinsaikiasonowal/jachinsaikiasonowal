@@ -1,38 +1,38 @@
 ```
-                                                       jachinsaikiasonowal
-                                                       --------------------------------
-                                                       OS: ................. Debian Linux
-                                                       Uptime: ........ 8+ years, still up
-                                                       Host: .............. Assam, India
-                      .#@@@@@@@+                       Kernel: .. Growth Systems Architect
-                    .@@@@@@@@@@@#                      IDE: .. VSCode . Cursor . Claude Code
-                   x@@@@@@@@@@@@@@                     
-                   @@@@@@@@@@@@@@@:                    Languages.Code: .. Python, JS, Bash
-                  .@@@###@@@@##@@@x                    Languages.AI: ... Claude, Gemini, n8n
-                  x@@:,        ,#@+                    Languages.Real: . English, Assamese
-                  #@:,.         ,@,                    
-                  x@,,.         ,@                     Hobbies.Software: . AI Agents, LLMOps
-                  ,@:.          :#                     Hobbies.Building: .. PromptMatrix, SaaS
-                   ##++,     .,,::                     Hobbies.Other: .... Revenue Ops, SEO
-                  ,##x:#x,.+x:,:::                     
-                  xxx#@##:.+###+,:.                    - Contact -------------------------
-                  :: .,.,. ,.,.  ,                     Email.Personal: . jachinch...@gmail.com
-                  :+,   :  ,    ,.                     LinkedIn: .. in/jachinsaikiasonowal
-                  .xx::::   ,..,:                      Instagram: ... @jachinsaikiasonowal
-                   ,#:.,##xx. .::                      X: ............. @jachinosonowal
-                    #x,.+x+,  .+,                      Newsletter: . matrixlabs.beehiiv.com
-                    x#@@#::x##:x                       PromptMatrix: . promptmatrix.github.io
-                     @@@@###@##+                       
-                     @@xx##x+##,                       - GitHub Stats --------------------
-                   +@#@@###x#@x,                       Repos: . (PromptMatrix Org) . Stars: *
-               ,#@@@@#@@@@@@@x::.                      AI Agents Live: ..... 25+ Clients: 175+
-            :@@@@@@@@##@@@@#x+,,@@:                    Revenue Generated: ......... $145K+
-          @@@@@@@@@@@#xx@@#x+,,@@@@@#.                 Pipelines Built: .............. 50+
-        .@@@@@@@@@@@@@#:xx:+x@@@@@@@@@@                
-        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#@+            - Stack ----------------------------
-       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:           Lang: .... Python, JavaScript, Bash
-      #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#           AI: .... Claude, Gemini, OpenAI, n8n
-     .@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+          Infra: .... Redis, Docker, Supabase
-     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:        Growth: .... Make, Zapier, HighLevel
-     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@        
+                                                  jachinsaikiasonowal
+                                                  ----------------------------------------
+                                                  OS: .......................... Debian Linux
+                              .:++:,              Uptime: ............... 8+ years, still up
+                             ;#######+:           Host: ........................ Assam, India
+                            +#@@@@###*+;,.        Role: .......... Growth Systems Architect
+                           ,@@@@@@###*+;:.        IDE: .... VSCode . Cursor . Claude . n8n
+                           #@@@@@@@##*++;...      
+                          ,#@@@@@@@##*++;..       Languages.Code: ........ Python, JS, Bash, C
+                          :#@@@@@@@#*+++:,,.      Languages.AI: ...... Claude, Gemini, OpenAI
+                          ;##@@@@@@##;:;;+;.      Languages.Real: ... English, Assamese, Hindi
+                          ;##@@@@@@##;,;:+:       
+                          :#####;;+*+:,:,:.       Hobbies.Software: .... AI Agents, LLM Ops
+                        ;+,#@@##+: .. .. .        Hobbies.Building: ... PromptMatrix, SaaS Tools
+                        +@######*.  ,;+.          Hobbies.Other: .... Revenue Ops, SEO, RISC-V
+                       ,#@##@#*#*    *#;          
+                       ,#+#@@@@@#:. +##*.         - Contact -----------------------------------
+                       .#+@#@@@@#*;*@#@#.         Email: .......... jachinsaikiasonowal@gmail.com
+                        @##@@@@##*#@#@@#.         LinkedIn: ......... in/jachinsaikiasonowal
+                        @@@#@@@#####@@@#.         Instagram: ......... @jachinsaikiasonowal
+                        :###@@@@##*#@@@*.         X / Twitter: ......... @jachinosonowal
+                           ###@@@#*@#*#:          Newsletter: ...... matrixlabs.beehiiv.com
+                           ;##@@@#@@;;*           Portfolio: .... matrixlabsagency.netlify.app
+                            ##@@@@@@@#;.          PromptMatrix: ..... promptmatrix.github.io
+                            ####@##+;,  .         
+                            ,###;  ..,..          - GitHub Stats ------------------------------
+                             +##:  ,;+,           Repos: ........ PromptMatrix Org + Personal
+                             :###*###*:.          AI Agents Live: ........... 25+ deployed
+                             :#*####+.            Clients Served: .............. 175+ total
+                             ,##**###*+.          Revenue Generated: ........... $145K+ ARR
+                             ####*+*+;            Campaign Impressions: ....... 2.5M+ reach
+                            #######*:             Lead Response SLA: ........ 24h --> 90 sec
+                            ########*;.           
+                            +#######*;,           - Stack -------------------------------------
+                             ########+.           AI/LLM: .... Claude, Gemini, n8n, LangChain
+                             .####***+,           Backend: ... Python, FastAPI, Redis, Supabase
 ```
