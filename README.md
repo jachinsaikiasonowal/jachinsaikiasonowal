@@ -1,3 +1,17 @@
+<p align="center">
+  <a href="https://jachinsaikiasonowal.vercel.app">
+    <img src="./assets/header.svg" alt="Jachin Saikia Sonowal - Header Banner" width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <img src="./assets/telemetry.svg" alt="Live Telemetry Dashboard" width="100%">
+</p>
+
+---
+
+### ⚡ System Telemetry & Kernel Profile
+
 ```
           ;v0%QE#bwf?;                 jachin@sonowal ----------------------------------------------------
        vbQ888g88g8gQ&Efl               . OS: .................... Linux (Debian/Ubuntu), Windows 11 (WSL2)
@@ -29,3 +43,118 @@
 d8Mg888888888888888888888888888%QO     . Revenue Impact: ......... $2.5M+ Pipeline | 175+ Client Systems
 8888888888888888888888888888888888     . Lines of Code on GitHub:  124,580 ( 142,190++, 17,610-- )
 ```
+
+---
+
+### 🌐 Flagship Engineering & Systems Ecosystem
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>⬡ PROMPTMATRIX — Swarm Control Plane & Governance Engine</h4>
+      <p>Runtime prompt behavior registry and sub-5ms evaluation control plane for multi-agent architectures (OpenClaw, LangGraph, CrewAI). Hot-patch drifting agent system prompts live without swarm restart.</p>
+      <ul>
+        <li>⚡ <b>Sub-5ms Serving:</b> High-throughput in-memory caching & variable interpolation.</li>
+        <li>📦 <b>Python SDK:</b> <code>pip install promptmatrix</code> (Zero-dependency stdlib).</li>
+        <li>🛠 <b>CLI Tooling:</b> <code>pip install promptmatrix-cli</code> (6-dimensional offline evaluation).</li>
+        <li>🔒 <b>Enterprise Guard:</b> AES-256-GCM encryption & deterministic LLM-as-a-Judge scoring.</li>
+      </ul>
+      <p>
+        <a href="https://promptmatrix.github.io"><b>Explore Registry →</b></a> | 
+        <a href="https://github.com/PromptMatrix/Promptmatrix"><b>GitHub Repo →</b></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🧠 Matrix Labs — AI Growth & Autonomous RevOps</h4>
+      <p>Autonomous agentic revenue infrastructure deployed across 175+ enterprise and SaaS engagements. Connects intent signal ingestion with multi-agent execution engines.</p>
+      <ul>
+        <li>🤖 <b>25+ Production AI Swarms:</b> Real-time lead enrichment, intent verification, and SDR routing in &lt;90s.</li>
+        <li>📈 <b>$2.5M+ Pipeline Generated:</b> 3.8x aggregate verified ROAS.</li>
+        <li>⚙️ <b>Enterprise MarTech:</b> HubSpot, Salesforce CRM, 6sense, Clay, ActiveCampaign.</li>
+        <li>📬 <b>Matrix Labs Intelligence:</b> Weekly publication on AI-native automation & systems.</li>
+      </ul>
+      <p>
+        <a href="https://matrixlabs.beehiiv.com"><b>Subscribe Newsletter →</b></a> | 
+        <a href="https://jachinsaikiasonowal.vercel.app"><b>Portfolio OS →</b></a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>⚙️ Silicon, Architecture & Low-Level Computing</h4>
+      <p>Explorations into hardware-software boundaries, instruction pipelines, and memory hierarchies.</p>
+      <ul>
+        <li>🖥️ <b>Baremetal RISC-V:</b> RV32I bootloader, timer interrupts, UART driver in pure C/ASM.</li>
+        <li>🔬 <b>CPU Architecture Simulator:</b> 5-stage pipeline, hazard detection, register file emulator.</li>
+        <li>🧪 <b>Memory Lab:</b> Static bump allocator, leak tracker, cache line simulator.</li>
+        <li>🐚 <b>Mini-Shell in C:</b> UNIX fork-exec engine, I/O piping, background job supervisor.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🚀 Next.js 15 Monolith & Edge Applications</h4>
+      <p>Modern full-stack web applications engineered for zero-latency distribution and deterministic client behavior.</p>
+      <ul>
+        <li>💎 <b>SON OF ANTON OS:</b> High-performance portfolio with glassmorphism & CSS micro-animations.</li>
+        <li>🛡️ <b>Client Anti-DevTools Shield:</b> Client-side integrity and tamper detection.</li>
+        <li>🌍 <b>Vercel Edge Distribution:</b> Sub-20ms TTFB global delivery.</li>
+        <li>📊 <b>GA4 & Looker Studio Analytics:</b> Multi-touch attribution modeling.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🛠️ Technical Keyword Matrix & Arsenal
+
+<div align="center">
+
+```
+========================================================================================
+[ AI & SWARMS ]     Claude 3.7 Sonnet · Gemini 2.5 Pro · GPT-4o · DeepSeek R1 · n8n · LangGraph
+[ REVOPS / CRM ]    HubSpot Enterprise · Salesforce CRM · 6sense · Clay · Beehiiv · Segment · GA4
+[ SYSTEMS / CODE ]  Python 3.12 · C (C99/C11) · RISC-V ASM · Linux IPC · Bash · POSIX · SQL
+[ FULL-STACK ]      Next.js 15 · TypeScript · React 19 · SQLite · PostgreSQL · Docker · Vercel
+========================================================================================
+```
+
+</div>
+
+---
+
+### 📊 GitHub Activity & Mission Telemetry
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=jachinsaikiasonowal&show_icons=true&theme=tokyonight&hide_border=true&bg_color=050811&title_color=00f2fe&icon_color=00f2fe&text_color=94a3b8" height="165" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=jachinsaikiasonowal&theme=tokyonight&hide_border=true&background=050811&stroke=00f2fe&ring=00f2fe&fire=facc15&currStreakNum=00f2fe&sideNums=94a3b8&sideLabels=94a3b8" height="165" alt="Streak Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jachinsaikiasonowal&layout=compact&theme=tokyonight&hide_border=true&bg_color=050811&title_color=00f2fe&text_color=94a3b8" height="165" alt="Top Languages" />
+</p>
+
+---
+
+### 📡 Secure Signal Transmission & Direct Inquiries
+
+<p align="center">
+  <a href="mailto:jachinsaikiasonowal@gmail.com">
+    <img src="https://img.shields.io/badge/Email-jachinsaikiasonowal%40gmail.com-00f2fe?style=for-the-badge&logo=gmail&logoColor=black" alt="Email" />
+  </a>
+  <a href="https://linkedin.com/in/jachinsaikiasonowal">
+    <img src="https://img.shields.io/badge/LinkedIn-Jachin%20Saikia%20Sonowal-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://x.com/jachinosonowal">
+    <img src="https://img.shields.io/badge/X%20%2F%20Twitter-%40jachinosonowal-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter" />
+  </a>
+  <a href="https://jachinsaikiasonowal.vercel.app">
+    <img src="https://img.shields.io/badge/Portfolio-jachinsaikiasonowal.vercel.app-7928CA?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+  </a>
+  <a href="https://matrixlabs.beehiiv.com">
+    <img src="https://img.shields.io/badge/Newsletter-Matrix%20Labs-FF5A5F?style=for-the-badge&logo=beehiiv&logoColor=white" alt="Newsletter" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>⚡ Engineered with deterministic precision by Jachin Saikia Sonowal · Node: Matrix Labs // Assam, India ⚡</sub>
+</p>

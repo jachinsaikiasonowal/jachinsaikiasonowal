@@ -1,0 +1,159 @@
+<svg fill="none" viewBox="0 0 900 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .container {
+          background: linear-gradient(135deg, #050811 0%, #0d1527 50%, #080a14 100%);
+          border: 1px solid rgba(0, 242, 254, 0.25);
+          border-radius: 12px;
+          height: 198px;
+          box-sizing: border-box;
+          padding: 24px 30px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Fira Code', monospace;
+          position: relative;
+          overflow: hidden;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(0, 242, 254, 0.05);
+        }
+        
+        .grid-bg {
+          position: absolute;
+          top: 0; left: 0; right: 0; bottom: 0;
+          background-image: 
+            linear-gradient(to right, rgba(0, 242, 254, 0.04) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(0, 242, 254, 0.04) 1px, transparent 1px);
+          background-size: 20px 20px;
+          pointer-events: none;
+        }
+
+        .scanline {
+          position: absolute;
+          top: 0; left: 0; right: 0; height: 2px;
+          background: linear-gradient(90deg, transparent, rgba(0, 242, 254, 0.6), transparent);
+          animation: scan 4s linear infinite;
+        }
+
+        @keyframes scan {
+          0% { transform: translateY(-5px); opacity: 0; }
+          10% { opacity: 1; }
+          90% { opacity: 1; }
+          100% { transform: translateY(200px); opacity: 0; }
+        }
+
+        .top-bar {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 12px;
+        }
+
+        .status-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: rgba(0, 242, 254, 0.08);
+          border: 1px solid rgba(0, 242, 254, 0.3);
+          border-radius: 20px;
+          padding: 4px 12px;
+          font-size: 11px;
+          font-weight: 600;
+          color: #00f2fe;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+
+        .dot {
+          width: 7px;
+          height: 7px;
+          background: #00f2fe;
+          border-radius: 50%;
+          box-shadow: 0 0 8px #00f2fe;
+          animation: pulse 2s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+          0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 8px #00f2fe; }
+          50% { opacity: 0.4; transform: scale(0.85); box-shadow: 0 0 2px #00f2fe; }
+        }
+
+        .sys-id {
+          font-size: 11px;
+          color: rgba(255, 255, 255, 0.4);
+          letter-spacing: 0.5px;
+        }
+
+        .title {
+          font-size: 26px;
+          font-weight: 800;
+          background: linear-gradient(90deg, #ffffff 0%, #00f2fe 50%, #4facfe 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin: 0 0 6px 0;
+          letter-spacing: -0.5px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .subtitle {
+          font-size: 13px;
+          color: #94a3b8;
+          margin: 0 0 14px 0;
+          font-weight: 500;
+          letter-spacing: 0.3px;
+        }
+
+        .badge-row {
+          display: flex;
+          gap: 8px;
+          flex-wrap: wrap;
+        }
+
+        .badge {
+          background: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 6px;
+          padding: 3px 8px;
+          font-size: 11px;
+          color: #cbd5e1;
+          font-family: monospace;
+        }
+
+        .badge.highlight {
+          background: rgba(0, 242, 254, 0.1);
+          border-color: rgba(0, 242, 254, 0.4);
+          color: #38bdf8;
+        }
+
+        .badge.gold {
+          background: rgba(234, 179, 8, 0.1);
+          border-color: rgba(234, 179, 8, 0.4);
+          color: #facc15;
+        }
+      </style>
+
+      <div class="container">
+        <div class="grid-bg"></div>
+        <div class="scanline"></div>
+        
+        <div class="top-bar">
+          <div class="status-pill">
+            <span class="dot"></span>
+            SWARM OS: RUNTIME ACTIVE
+          </div>
+          <div class="sys-id">NODE: MATRIX-LABS // RISC-V // LLMOPS</div>
+        </div>
+
+        <h1 class="title">JACHIN SAIKIA SONOWAL</h1>
+        <p class="subtitle">Growth Systems Architect ⚡ AI Agentic RevOps ⚡ PromptMatrix Creator</p>
+
+        <div class="badge-row">
+          <span class="badge highlight">&lt;5ms Prompt Serving</span>
+          <span class="badge gold">$2.5M+ Pipeline</span>
+          <span class="badge">25+ AI Swarms</span>
+          <span class="badge highlight">Baremetal RISC-V</span>
+          <span class="badge">175+ Client Engagements</span>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
