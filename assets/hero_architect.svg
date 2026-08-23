@@ -136,13 +136,12 @@
       </text>
     </g>
 
-    <!-- Central Role & Architectural Tag -->
+    <!-- Central Role: Strictly Growth Systems Architect -->
     <g transform="translate(50, 72)">
       <text x="0" y="28" class="sans-font" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="-0.3">
         Growth Systems Architect
       </text>
 
-      <!-- Subtitle -->
       <text x="0" y="58" class="sans-font" font-size="14" font-weight="500" fill="#94a3b8" letter-spacing="0.3">
         AI Swarm Orchestration <tspan fill="#00f2fe">|</tspan> Baremetal RISC-V &amp; Systems <tspan fill="#a855f7">|</tspan> Marketing Ops
       </text>
