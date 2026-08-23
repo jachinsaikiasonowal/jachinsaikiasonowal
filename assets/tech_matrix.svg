@@ -1,0 +1,109 @@
+<svg fill="none" viewBox="0 0 900 170" width="100%" height="170" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&amp;family=Space+Grotesk:wght@600;700;800&amp;display=swap');
+
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        .matrix-wrap {
+          width: 100%;
+          height: 168px;
+          background: linear-gradient(180deg, #070c1b 0%, #030611 100%);
+          border: 1px solid rgba(0, 242, 254, 0.25);
+          border-radius: 12px;
+          padding: 16px 20px;
+          font-family: 'Space Grotesk', -apple-system, sans-serif;
+          position: relative;
+          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .matrix-title {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 11px;
+          font-weight: 700;
+          color: #38bdf8;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 12px;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+
+        .stack-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px 16px;
+        }
+
+        .stack-row {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          background: rgba(15, 23, 42, 0.6);
+          border: 1px solid rgba(255, 255, 255, 0.06);
+          border-radius: 6px;
+          padding: 6px 10px;
+        }
+
+        .stack-tag {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 10px;
+          font-weight: 800;
+          padding: 2px 6px;
+          border-radius: 4px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          min-width: 85px;
+          text-align: center;
+        }
+
+        .tag-ai { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+        .tag-revops { background: rgba(250, 204, 21, 0.15); color: #facc15; border: 1px solid rgba(250, 204, 21, 0.3); }
+        .tag-sys { background: rgba(0, 242, 254, 0.15); color: #00f2fe; border: 1px solid rgba(0, 242, 254, 0.3); }
+        .tag-web { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+
+        .stack-items {
+          font-size: 11.5px;
+          color: #cbd5e1;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      </style>
+
+      <div class="matrix-wrap">
+        <div class="matrix-title">
+          <span>⚡</span> ARSENAL &amp; ARCHITECTURAL STACK
+        </div>
+
+        <div class="stack-grid">
+          <div class="stack-row">
+            <span class="stack-tag tag-ai">AI &amp; SWARMS</span>
+            <span class="stack-items">Claude 3.7 · Gemini 2.5 Pro · GPT-4o · DeepSeek R1 · n8n · LangGraph</span>
+          </div>
+
+          <div class="stack-row">
+            <span class="stack-tag tag-revops">REVOPS &amp; CRM</span>
+            <span class="stack-items">HubSpot Enterprise · Salesforce · 6sense · Clay · Beehiiv · GA4</span>
+          </div>
+
+          <div class="stack-row">
+            <span class="stack-tag tag-sys">SYSTEMS &amp; LOW-LVL</span>
+            <span class="stack-items">Python 3.12 · C (C99/C11) · RISC-V ASM · Linux IPC · POSIX · Bash</span>
+          </div>
+
+          <div class="stack-row">
+            <span class="stack-tag tag-web">FULL-STACK &amp; EDGE</span>
+            <span class="stack-items">Next.js 15 · TypeScript · React 19 · SQLite · PostgreSQL · Docker · Vercel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://jachinsaikiasonowal.vercel.app">
-    <img src="./assets/header.svg" alt="Jachin Saikia Sonowal - Header Banner" width="100%">
+    <img src="./assets/header.svg" alt="Jachin Saikia Sonowal - Cyber Header Banner" width="100%">
   </a>
 </p>
 
@@ -8,27 +8,31 @@
   <img src="./assets/telemetry.svg" alt="Live Telemetry Dashboard" width="100%">
 </p>
 
+<p align="center">
+  <img src="./assets/swarm_architecture.svg" alt="PROMPTMATRIX Swarm Control Plane Architecture" width="100%">
+</p>
+
 ---
 
 ### ⚡ System Telemetry & Kernel Profile
 
-```
+```text
           ;v0%QE#bwf?;                 jachin@sonowal ----------------------------------------------------
        vbQ888g88g8gQ&Efl               . OS: .................... Linux (Debian/Ubuntu), Windows 11 (WSL2)
       p888888M88888Mg%MW>              . Uptime: ................ 8+ Years Production (Revenue & Systems)
      i88888888888888888gM:             . Host: .................. Matrix Labs (Guwahati, Assam · Remote)
     <M888ggg88888%E@s88g8j             . Kernel: ................ Growth Systems Architect & AI RevOps Lead
-    W88H`  .---..---.  `X88p           . IDE / CLI: ............. Cursor, VS Code 1.96, Claude Code, n8n
+    W88H`  .---..---.  `X88p           . IDE / CLI: ............. Cursor, VS Code, Claude Code, n8n
    .88b` /{{]99  99[}}\ `q8X       
     EMu [-( 89 == 89 )-] !8t           . Languages.Code: ........ Python, JavaScript, TypeScript, C, SQL
     qMj \_(`00 == 00`)_/ <M:           . Languages.Systems: ..... RISC-V Assembly, Bash, Linux IPC, POSIX
     !Wm`   `"      "`   :O             . Languages.AI: .......... Claude 3.7, Gemini 2.5, GPT-4o, DeepSeek
     cbp`     |    |     lz"            . Languages.Real: ........ English (Fluent), Assamese, Hindi
    fEnX      |/\  |     !?u.       
-   c8j-    .wWW##WWw.   jx             . Hobbies.Software: ...... PROMPTMATRIX Core, AI Agent Swarms, LLMOps
-   <spf  _m#BBWWWWBB#m_ :I"            . Hobbies.Hardware: ...... Baremetal RISC-V, CPU Simulator, Overclocking
+   c8j-    .wWW##WWw.   jx             . Systems.Flagship: ...... PROMPTMATRIX Core, AI Agent Swarms, LLMOps
+   <spf  _m#BBWWWWBB#m_ :I"            . Systems.Hardware: ...... Baremetal RISC-V, CPU Simulator, Memory Lab
     tH$X  `"wwwwwwww"` ~"          
-     :&$bv   `====`  ,:~>              - Contact ---------------------------------------------------------
+     :&$bv   `====`  ,:~>              - Transmission & Direct Inquiries ---------------------------------
       OWHqr   `..`   .`,>^             . Email.Personal: ........ jachinsaikiasonowal@gmail.com
       ~%sg88; |  | ;i+                 . Email.Work: ............ jachinchsaikiasonowal@gmail.com
        m88888%||jkk11`|[[              . Portfolio: ............. jachinsaikiasonowal.vercel.app
@@ -37,11 +41,11 @@
  cq#g8MK@&8888|||j**```;i[             . Newsletter: ............ matrixlabs.beehiiv.com
  88888M0$$Qg88g00gmp; ,;;j%k           . OSS Registry: .......... promptmatrix.github.io
  gg8888%#B$M88QK0000%kgK!|jj       
- 88888888Qpd#s$X000H00%K(illl          - GitHub & Enterprise Stats ---------------------------------------
+ 88888888Qpd#s$X000H00%K(illl          - Production Metrics & Field Telemetry ----------------------------
  888888888MssEQ&MHXXXXHQgkill          . Repos: .... 19+ {OSS & Systems} | Stars: ......... 150+ ⭐
- d&QQg8MMg8888888888888gMg8ggQEQbl     . Commits: ................ 1,480+ | AI Swarms Live: ... 25+ Prod
+ d&QQg8MMg8888888888888gMg8ggQEQbl     . Commits: ................ 1,500+ | AI Swarms Live: ... 25+ Prod
 d8Mg888888888888888888888888888%QO     . Revenue Impact: ......... $2.5M+ Pipeline | 175+ Client Systems
-8888888888888888888888888888888888     . Lines of Code on GitHub:  124,580 ( 142,190++, 17,610-- )
+8888888888888888888888888888888888     . Latency Slashed: ........ Sub-5ms Prompt Serving | <90s Dispatch
 ```
 
 ---
@@ -54,9 +58,9 @@ d8Mg888888888888888888888888888%QO     . Revenue Impact: ......... $2.5M+ Pipeli
       <h4>⬡ PROMPTMATRIX — Swarm Control Plane & Governance Engine</h4>
       <p>Runtime prompt behavior registry and sub-5ms evaluation control plane for multi-agent architectures (OpenClaw, LangGraph, CrewAI). Hot-patch drifting agent system prompts live without swarm restart.</p>
       <ul>
-        <li>⚡ <b>Sub-5ms Serving:</b> High-throughput in-memory caching & variable interpolation.</li>
+        <li>⚡ <b>Sub-5ms Serving:</b> High-throughput in-memory caching & dynamic interpolation.</li>
         <li>📦 <b>Python SDK:</b> <code>pip install promptmatrix</code> (Zero-dependency stdlib).</li>
-        <li>🛠 <b>CLI Tooling:</b> <code>pip install promptmatrix-cli</code> (6-dimensional offline evaluation).</li>
+        <li>🛠 <b>CLI Tooling:</b> <code>pip install promptmatrix-cli</code> (6D offline evaluation engine).</li>
         <li>🔒 <b>Enterprise Guard:</b> AES-256-GCM encryption & deterministic LLM-as-a-Judge scoring.</li>
       </ul>
       <p>
@@ -107,22 +111,13 @@ d8Mg888888888888888888888888888%QO     . Revenue Impact: ......... $2.5M+ Pipeli
 
 ### 🛠️ Technical Keyword Matrix & Arsenal
 
-<div align="center">
-
-```
-========================================================================================
-[ AI & SWARMS ]     Claude 3.7 Sonnet · Gemini 2.5 Pro · GPT-4o · DeepSeek R1 · n8n · LangGraph
-[ REVOPS / CRM ]    HubSpot Enterprise · Salesforce CRM · 6sense · Clay · Beehiiv · Segment · GA4
-[ SYSTEMS / CODE ]  Python 3.12 · C (C99/C11) · RISC-V ASM · Linux IPC · Bash · POSIX · SQL
-[ FULL-STACK ]      Next.js 15 · TypeScript · React 19 · SQLite · PostgreSQL · Docker · Vercel
-========================================================================================
-```
-
-</div>
+<p align="center">
+  <img src="./assets/tech_matrix.svg" alt="Technical Stack and Arsenal Matrix" width="100%">
+</p>
 
 ---
 
-### 📊 GitHub Activity & Mission Telemetry
+### 📊 Mission Telemetry & GitHub Field Metrics
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=jachinsaikiasonowal&show_icons=true&theme=tokyonight&hide_border=true&bg_color=050811&title_color=00f2fe&icon_color=00f2fe&text_color=94a3b8" height="165" alt="GitHub Stats" />
