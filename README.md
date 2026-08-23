@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://jachinsaikiasonowal.vercel.app">
-    <img src="./assets/hero_hologram.svg" alt="Jachin Saikia Sonowal - Cognitive Architect & AGI Systems Operator" width="100%">
+    <img src="./assets/hero_hologram.svg" alt="Cognitive Architect & AGI Systems Operator" width="100%">
   </a>
 </p>
 
@@ -34,7 +34,7 @@
 
 ---
 
-### ⚙️ Silicon Architecture & Low-Level Computing Matrix
+### ⚙️ Silicon Architecture & Low-Level Computing
 
 <p align="center">
   <a href="https://github.com/jachinsaikiasonowal?tab=repositories">
@@ -54,17 +54,7 @@
 
 ---
 
-### ⚡ System Core Kernel & Telemetry Terminal HUD
-
-<p align="center">
-  <a href="https://jachinsaikiasonowal.vercel.app">
-    <img src="./assets/system_kernel_matrix.svg" alt="System Core Terminal HUD" width="100%">
-  </a>
-</p>
-
----
-
-### 📊 Mission Telemetry & Engineering Velocity Dashboard
+### 📊 Mission Velocity & Production Telemetry
 
 <p align="center">
   <a href="https://github.com/jachinsaikiasonowal?tab=repositories">
@@ -74,7 +64,7 @@
 
 ---
 
-### 📡 Secure Signal Transmission & Direct Inquiries
+### 📡 Direct Signal Transmission & Inquiries
 
 <p align="center">
   <a href="mailto:jachinsaikiasonowal@gmail.com">
@@ -83,5 +73,5 @@
 </p>
 
 <p align="center">
-  <sub>⚡ Engineered with deterministic precision &amp; systems architecture by Jachin Saikia Sonowal · Node: Matrix Labs // Assam, India ⚡</sub>
+  <sub>⚡ Engineered with deterministic precision &amp; systems architecture · Node: Matrix Labs ⚡</sub>
 </p>

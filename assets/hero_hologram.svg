@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" width="100%" height="100%">
   <defs>
-    <radialGradient id="hologramBg" cx="50%" cy="35%" r="75%">
+    <radialGradient id="heroBg" cx="50%" cy="40%" r="75%">
       <stop offset="0%" stop-color="#0c1a36" stop-opacity="0.95"/>
-      <stop offset="55%" stop-color="#030712" stop-opacity="0.98"/>
+      <stop offset="60%" stop-color="#030712" stop-opacity="0.98"/>
       <stop offset="100%" stop-color="#010309" stop-opacity="1"/>
     </radialGradient>
 
@@ -14,26 +14,17 @@
 
     <linearGradient id="purpleLaser" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#c084fc"/>
-      <stop offset="50%" stop-color="#818cf8"/>
-      <stop offset="100%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#6366f1"/>
     </linearGradient>
 
     <linearGradient id="gridFade" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.2"/>
-      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.05"/>
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.04"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </linearGradient>
 
     <filter id="bloom" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <filter id="softGlow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -41,19 +32,19 @@
     </filter>
 
     <clipPath id="heroClip">
-      <rect x="0" y="0" width="1200" height="380" rx="16" ry="16"/>
+      <rect x="0" y="0" width="1200" height="250" rx="14" ry="14"/>
     </clipPath>
   </defs>
 
   <style>
     @keyframes laserSweep {
-      0% { transform: translateY(-380px); opacity: 0; }
-      50% { opacity: 0.8; }
-      100% { transform: translateY(380px); opacity: 0; }
+      0% { transform: translateY(-250px); opacity: 0; }
+      50% { opacity: 0.75; }
+      100% { transform: translateY(250px); opacity: 0; }
     }
     @keyframes pulseHolo {
-      0%, 100% { opacity: 0.4; filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.4)); }
-      50% { opacity: 0.95; filter: drop-shadow(0 0 22px rgba(0, 242, 254, 0.95)); }
+      0%, 100% { opacity: 0.4; filter: drop-shadow(0 0 6px rgba(0, 242, 254, 0.4)); }
+      50% { opacity: 0.95; filter: drop-shadow(0 0 18px rgba(0, 242, 254, 0.9)); }
     }
     @keyframes orbit1 {
       0% { transform: rotate(0deg); }
@@ -68,152 +59,116 @@
       50% { opacity: 0.3; transform: scale(0.85); }
     }
     @keyframes circuitStream {
-      0% { stroke-dashoffset: 400; }
+      0% { stroke-dashoffset: 300; }
       100% { stroke-dashoffset: 0; }
     }
-    @keyframes floatParticle {
-      0%, 100% { transform: translateY(0px) translateX(0px); }
-      50% { transform: translateY(-12px) translateX(6px); }
-    }
 
-    .sans-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; }
-    .mono-font { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
+    .sans-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .mono-font { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
     
-    .scan-beam { animation: laserSweep 7s ease-in-out infinite; }
-    .core-pulse { animation: pulseHolo 3.5s ease-in-out infinite; }
-    .radar-outer { transform-origin: 1040px 190px; animation: orbit1 16s linear infinite; }
-    .radar-inner { transform-origin: 1040px 190px; animation: orbit2 10s linear infinite; }
+    .scan-beam { animation: laserSweep 6s ease-in-out infinite; }
+    .core-pulse { animation: pulseHolo 3s ease-in-out infinite; }
+    .radar-outer { transform-origin: 1060px 125px; animation: orbit1 14s linear infinite; }
+    .radar-inner { transform-origin: 1060px 125px; animation: orbit2 9s linear infinite; }
     .blink-dot { animation: liveBlink 1.8s ease-in-out infinite; }
-    .circuit-bus { stroke-dasharray: 10 14; animation: circuitStream 15s linear infinite; }
-    .particle-fx { animation: floatParticle 4.5s ease-in-out infinite; }
+    .circuit-bus { stroke-dasharray: 8 12; animation: circuitStream 12s linear infinite; }
   </style>
 
   <g clip-path="url(#heroClip)">
-    <rect width="1200" height="380" fill="url(#hologramBg)"/>
+    <rect width="1200" height="250" fill="url(#heroBg)"/>
 
-    <!-- Perspective Grid -->
-    <g stroke="url(#gridFade)" stroke-width="1" opacity="0.65">
-      <line x1="0" y1="60" x2="1200" y2="60"/>
-      <line x1="0" y1="130" x2="1200" y2="130"/>
+    <!-- Grid -->
+    <g stroke="url(#gridFade)" stroke-width="1" opacity="0.6">
+      <line x1="0" y1="50" x2="1200" y2="50"/>
+      <line x1="0" y1="100" x2="1200" y2="100"/>
+      <line x1="0" y1="150" x2="1200" y2="150"/>
       <line x1="0" y1="200" x2="1200" y2="200"/>
-      <line x1="0" y1="270" x2="1200" y2="270"/>
-      <line x1="0" y1="340" x2="1200" y2="340"/>
-      <line x1="120" y1="0" x2="120" y2="380"/>
-      <line x1="320" y1="0" x2="320" y2="380"/>
-      <line x1="520" y1="0" x2="520" y2="380"/>
-      <line x1="720" y1="0" x2="720" y2="380"/>
-      <line x1="920" y1="0" x2="920" y2="380"/>
-      <line x1="1120" y1="0" x2="1120" y2="380"/>
+      <line x1="160" y1="0" x2="160" y2="250"/>
+      <line x1="400" y1="0" x2="400" y2="250"/>
+      <line x1="640" y1="0" x2="640" y2="250"/>
+      <line x1="880" y1="0" x2="880" y2="250"/>
     </g>
 
-    <!-- Circuit Lines -->
-    <g fill="none" stroke="#00f2fe" stroke-width="1.5" opacity="0.45">
-      <path d="M 0 90 L 340 90 L 400 150 L 760 150 L 800 110 L 1200 110" class="circuit-bus"/>
-      <path d="M 0 310 L 280 310 L 340 250 L 660 250 L 700 290 L 1200 290" class="circuit-bus" stroke="#a855f7"/>
+    <!-- Circuit Conduit Lines -->
+    <g fill="none" stroke="#00f2fe" stroke-width="1.3" opacity="0.4">
+      <path d="M 0 60 L 320 60 L 360 100 L 780 100 L 820 60 L 1200 60" class="circuit-bus"/>
+      <path d="M 0 200 L 260 200 L 300 160 L 680 160 L 720 200 L 1200 200" class="circuit-bus" stroke="#a855f7"/>
     </g>
 
-    <!-- Ambient Glowing Orbs -->
-    <circle cx="220" cy="170" r="140" fill="#00f2fe" opacity="0.07" filter="url(#bloom)"/>
-    <circle cx="680" cy="200" r="160" fill="#6366f1" opacity="0.08" filter="url(#bloom)"/>
-    <circle cx="1040" cy="190" r="130" fill="#00f2fe" opacity="0.12" filter="url(#bloom)"/>
-
-    <!-- High-Tech Radar HUD (Right Section) -->
+    <!-- Radar HUD (Right Side) -->
     <g id="radar-hud">
-      <polygon points="1040,85 1135,138 1135,242 1040,295 945,242 945,138" fill="#020814" stroke="#00f2fe" stroke-width="1.2" opacity="0.35" stroke-dasharray="6 4"/>
+      <polygon points="1060,45 1130,85 1130,165 1060,205 990,165 990,85" fill="#020814" stroke="#00f2fe" stroke-width="1" opacity="0.35" stroke-dasharray="4 4"/>
       
-      <!-- Outer Orbit Ring -->
       <g class="radar-outer">
-        <circle cx="1040" cy="190" r="82" fill="none" stroke="url(#cyanLaser)" stroke-width="1.6" stroke-dasharray="140 35 25 20" opacity="0.8"/>
-        <circle cx="1040" cy="108" r="4" fill="#00f2fe" filter="url(#bloom)"/>
-        <circle cx="1122" cy="190" r="3" fill="#38bdf8"/>
+        <circle cx="1060" cy="125" r="64" fill="none" stroke="url(#cyanLaser)" stroke-width="1.5" stroke-dasharray="110 30 20 15" opacity="0.8"/>
+        <circle cx="1060" cy="61" r="3.5" fill="#00f2fe" filter="url(#bloom)"/>
       </g>
       
-      <!-- Inner Counter Orbit -->
       <g class="radar-inner">
-        <circle cx="1040" cy="190" r="58" fill="none" stroke="url(#purpleLaser)" stroke-width="1.2" stroke-dasharray="70 25 15 15" opacity="0.85"/>
-        <circle cx="1040" cy="132" r="3.5" fill="#a855f7" filter="url(#bloom)"/>
+        <circle cx="1060" cy="125" r="44" fill="none" stroke="url(#purpleLaser)" stroke-width="1.2" stroke-dasharray="60 20 15 10" opacity="0.85"/>
+        <circle cx="1060" cy="81" r="3" fill="#c084fc" filter="url(#bloom)"/>
       </g>
       
-      <!-- Core Telemetry Node -->
-      <circle cx="1040" cy="190" r="34" fill="#040d1f" stroke="#00f2fe" stroke-width="1.5" opacity="0.95"/>
-      <circle cx="1040" cy="190" r="12" fill="url(#cyanLaser)" filter="url(#bloom)" class="core-pulse"/>
-      <circle cx="1040" cy="190" r="4" fill="#ffffff"/>
+      <circle cx="1060" cy="125" r="24" fill="#040d1f" stroke="#00f2fe" stroke-width="1.3" opacity="0.95"/>
+      <circle cx="1060" cy="125" r="8" fill="url(#cyanLaser)" filter="url(#bloom)" class="core-pulse"/>
+      <circle cx="1060" cy="125" r="3" fill="#ffffff"/>
 
-      <!-- Crosshairs -->
-      <line x1="930" y1="190" x2="1150" y2="190" stroke="#00f2fe" stroke-width="0.7" opacity="0.3" stroke-dasharray="4 4"/>
-      <line x1="1040" y1="85" x2="1040" y2="295" stroke="#00f2fe" stroke-width="0.7" opacity="0.3" stroke-dasharray="4 4"/>
+      <line x1="970" y1="125" x2="1150" y2="125" stroke="#00f2fe" stroke-width="0.6" opacity="0.3" stroke-dasharray="3 3"/>
+      <line x1="1060" y1="35" x2="1060" y2="215" stroke="#00f2fe" stroke-width="0.6" opacity="0.3" stroke-dasharray="3 3"/>
 
-      <!-- Radar Telemetry Badge -->
-      <rect x="960" y="315" width="160" height="24" rx="5" fill="#051226" stroke="#00f2fe" stroke-width="0.9" opacity="0.8"/>
-      <text x="1040" y="331" text-anchor="middle" class="mono-font" font-size="9.5" font-weight="700" fill="#38bdf8" letter-spacing="1.5">
-        CONTROL PLANE ACTIVE
+      <rect x="980" y="218" width="160" height="20" rx="4" fill="#051226" stroke="#00f2fe" stroke-width="0.8" opacity="0.8"/>
+      <text x="1060" y="232" text-anchor="middle" class="mono-font" font-size="9" font-weight="700" fill="#38bdf8" letter-spacing="1">
+        25 PROD SWARM NODES
       </text>
-    </g>
-
-    <!-- Floating Quantum Micro Particles -->
-    <g fill="#00f2fe" opacity="0.6">
-      <circle cx="160" cy="70" r="1.5" class="particle-fx"/>
-      <circle cx="380" cy="330" r="2" class="particle-fx" style="animation-delay: 1.2s;"/>
-      <circle cx="640" cy="80" r="1.6" class="particle-fx" style="animation-delay: 2.1s;"/>
     </g>
 
     <!-- Top Status Bar -->
     <g id="top-status">
-      <rect x="60" y="36" width="175" height="26" rx="13" fill="#051624" stroke="#00f2fe" stroke-width="1" opacity="0.95"/>
-      <circle cx="76" cy="49" r="4" fill="#10b981" class="blink-dot" filter="url(#bloom)"/>
-      <text x="90" y="53" class="mono-font" font-size="10.5" font-weight="700" fill="#34d399" letter-spacing="1">STATUS: OPERATIONAL</text>
+      <rect x="50" y="30" width="170" height="24" rx="12" fill="#051624" stroke="#00f2fe" stroke-width="1" opacity="0.95"/>
+      <circle cx="65" cy="42" r="3.5" fill="#10b981" class="blink-dot" filter="url(#bloom)"/>
+      <text x="78" y="46" class="mono-font" font-size="10" font-weight="700" fill="#34d399" letter-spacing="1">SYSTEM: OPERATIONAL</text>
 
-      <rect x="250" y="36" width="180" height="26" rx="13" fill="#100b29" stroke="#818cf8" stroke-width="1" opacity="0.95"/>
-      <text x="265" y="53" class="mono-font" font-size="10.5" font-weight="700" fill="#c7d2fe" letter-spacing="1">PROMPTMATRIX // v1.2</text>
+      <rect x="235" y="30" width="180" height="24" rx="12" fill="#100b29" stroke="#818cf8" stroke-width="1" opacity="0.95"/>
+      <text x="250" y="46" class="mono-font" font-size="10" font-weight="700" fill="#c7d2fe" letter-spacing="1">PROMPTMATRIX // v1.2</text>
 
-      <text x="890" y="53" text-anchor="end" class="mono-font" font-size="10" fill="#64748b" letter-spacing="1.5">
-        SYS.ARCH: RV32I · AGI SWARMS · REVOPS
+      <text x="910" y="46" text-anchor="end" class="mono-font" font-size="9.5" fill="#64748b" letter-spacing="1.5">
+        CORE: RV32I · AGI SWARMS · REVOPS
       </text>
     </g>
 
-    <!-- Main Typography Core -->
-    <g transform="translate(60, 105)">
-      <!-- Identity Tagline -->
-      <text x="0" y="24" class="mono-font" font-size="12.5" font-weight="700" fill="#00f2fe" letter-spacing="3" filter="url(#softGlow)">
-        // COGNITIVE ARCHITECT · AGI SYSTEMS OPERATOR
+    <!-- Central Role & Architectural Manifesto -->
+    <g transform="translate(50, 78)">
+      <!-- Main Role Title -->
+      <text x="0" y="28" class="sans-font" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+        Cognitive Architect <tspan fill="#00f2fe">&amp;</tspan> AGI Systems Operator
       </text>
 
-      <!-- Primary Name Header -->
-      <g>
-        <text x="0" y="80" class="sans-font" font-size="50" font-weight="900" fill="#ffffff" letter-spacing="-1">
-          Jachin Saikia Sonowal
-        </text>
-        <text x="0" y="80" class="sans-font" font-size="50" font-weight="900" fill="url(#cyanLaser)" opacity="0.18" letter-spacing="-1" transform="translate(2, 2)">
-          Jachin Saikia Sonowal
-        </text>
-      </g>
-
-      <!-- Specialization Subhead -->
-      <text x="0" y="122" class="sans-font" font-size="17.5" font-weight="500" fill="#cbd5e1" letter-spacing="0.5">
-        Multi-Agent Swarm Orchestration <tspan fill="#00f2fe">|</tspan> Baremetal RISC-V &amp; Silicon <tspan fill="#a855f7">|</tspan> Autonomous RevOps
+      <!-- Subtitle -->
+      <text x="0" y="60" class="sans-font" font-size="14.5" font-weight="500" fill="#94a3b8" letter-spacing="0.5">
+        Multi-Agent Swarm Control Planes <tspan fill="#00f2fe">|</tspan> Baremetal RISC-V &amp; Silicon <tspan fill="#a855f7">|</tspan> Autonomous RevOps Infrastructure
       </text>
 
-      <!-- Interactive Cyber Terminal Line -->
-      <g transform="translate(0, 156)">
-        <rect x="0" y="0" width="760" height="46" rx="8" fill="#030919" stroke="#1e293b" stroke-width="1.2"/>
-        <rect x="0" y="0" width="4" height="46" rx="2" fill="url(#cyanLaser)"/>
+      <!-- Terminal Command Line -->
+      <g transform="translate(0, 82)">
+        <rect x="0" y="0" width="760" height="42" rx="6" fill="#030919" stroke="#1e293b" stroke-width="1.1"/>
+        <rect x="0" y="0" width="3.5" height="42" rx="1.5" fill="url(#cyanLaser)"/>
         
-        <text x="20" y="29" class="mono-font" font-size="13.5" font-weight="700" fill="#00f2fe">matrix@jachin:~$</text>
-        <text x="180" y="29" class="mono-font" font-size="13" font-weight="500" fill="#f8fafc">
-          promptmatrix swarm --dispatch --nodes=25 --eval=deterministic
+        <text x="18" y="26" class="mono-font" font-size="12.5" font-weight="700" fill="#00f2fe">matrix@node:~$</text>
+        <text x="156" y="26" class="mono-font" font-size="12" font-weight="500" fill="#f8fafc">
+          promptmatrix swarm --dispatch --nodes=25 --eval=deterministic --latency=&lt;5ms
         </text>
-        <rect x="710" y="15" width="8" height="16" fill="#00f2fe" class="blink-dot"/>
+        <rect x="710" y="13" width="7" height="15" fill="#00f2fe" class="blink-dot"/>
       </g>
     </g>
 
-    <!-- Laser Scanning Beam Overlay -->
-    <line x1="0" y1="0" x2="1200" y2="0" stroke="url(#cyanLaser)" stroke-width="2" opacity="0.6" filter="url(#bloom)" class="scan-beam"/>
+    <!-- Laser Scanning Beam -->
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="url(#cyanLaser)" stroke-width="1.8" opacity="0.6" filter="url(#bloom)" class="scan-beam"/>
 
-    <!-- High-Tech Border Frame -->
-    <rect x="1" y="1" width="1198" height="378" rx="15" ry="15" fill="none" stroke="url(#cyanLaser)" stroke-width="1.2" opacity="0.4"/>
-    <path d="M 2 28 L 2 2 L 28 2" fill="none" stroke="#00f2fe" stroke-width="3"/>
-    <path d="M 1172 2 L 1198 2 L 1198 28" fill="none" stroke="#00f2fe" stroke-width="3"/>
-    <path d="M 2 352 L 2 378 L 28 378" fill="none" stroke="#00f2fe" stroke-width="3"/>
-    <path d="M 1172 378 L 1198 378 L 1198 352" fill="none" stroke="#00f2fe" stroke-width="3"/>
+    <!-- Outer Frame -->
+    <rect x="1" y="1" width="1198" height="248" rx="13" ry="13" fill="none" stroke="url(#cyanLaser)" stroke-width="1.1" opacity="0.35"/>
+    <path d="M 2 22 L 2 2 L 22 2" fill="none" stroke="#00f2fe" stroke-width="2.5"/>
+    <path d="M 1178 2 L 1198 2 L 1198 22" fill="none" stroke="#00f2fe" stroke-width="2.5"/>
+    <path d="M 2 228 L 2 248 L 22 248" fill="none" stroke="#00f2fe" stroke-width="2.5"/>
+    <path d="M 1178 248 L 1198 248 L 1198 228" fill="none" stroke="#00f2fe" stroke-width="2.5"/>
   </g>
 </svg>
