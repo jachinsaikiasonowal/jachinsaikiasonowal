@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" width="100%" height="100%">
+  <defs>
+    <radialGradient id="swarmBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#081024" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#030712" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#010308" stop-opacity="1"/>
+    </radialGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <filter id="glowBloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="swarmClip">
+      <rect x="0" y="0" width="1100" height="480" rx="14" ry="14"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    @keyframes flowOffset {
+      0% { stroke-dashoffset: 160; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes nodePulse {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px rgba(0,242,254,0.4)); }
+      50% { transform: scale(1.02); filter: drop-shadow(0 0 16px rgba(0,242,254,0.8)); }
+    }
+    @keyframes packetMove1 {
+      0% { cx: 180; cy: 240; opacity: 0; }
+      15% { opacity: 1; }
+      45% { cx: 400; cy: 240; opacity: 1; }
+      50% { opacity: 0; }
+      100% { cx: 400; cy: 240; opacity: 0; }
+    }
+    @keyframes packetMove2 {
+      0% { cx: 580; cy: 190; opacity: 0; }
+      15% { opacity: 1; }
+      45% { cx: 770; cy: 160; opacity: 1; }
+      50% { opacity: 0; }
+      100% { cx: 770; cy: 160; opacity: 0; }
+    }
+    @keyframes packetMove3 {
+      0% { cx: 580; cy: 290; opacity: 0; }
+      15% { opacity: 1; }
+      45% { cx: 770; cy: 320; opacity: 1; }
+      50% { opacity: 0; }
+      100% { cx: 770; cy: 320; opacity: 0; }
+    }
+    @keyframes liveBeacon {
+      0%, 100% { opacity: 0.3; r: 3; }
+      50% { opacity: 1; r: 6; }
+    }
+
+    .flow-line { stroke-dasharray: 8 8; animation: flowOffset 6s linear infinite; }
+    .pulse-card { animation: nodePulse 4s ease-in-out infinite; }
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
+    .sans { font-family: 'SF Pro Display', -apple-system, 'Segoe UI', Roboto, sans-serif; }
+    .beacon { animation: liveBeacon 2s ease-in-out infinite; }
+  </style>
+
+  <g clip-path="url(#swarmClip)">
+    <rect width="1100" height="480" fill="url(#swarmBg)"/>
+
+    <!-- Ambient Grid & Structural Hexagons -->
+    <g stroke="#1e293b" stroke-width="0.8" opacity="0.4">
+      <line x1="0" y1="80" x2="1100" y2="80"/>
+      <line x1="0" y1="400" x2="1100" y2="400"/>
+      <line x1="280" y1="0" x2="280" y2="480"/>
+      <line x1="680" y1="0" x2="680" y2="480"/>
+    </g>
+
+    <!-- Header Section -->
+    <g transform="translate(40, 42)">
+      <circle cx="10" cy="10" r="5" fill="#00f2fe" class="beacon" filter="url(#glowBloom)"/>
+      <text x="26" y="14" class="mono" font-size="12" font-weight="700" fill="#00f2fe" letter-spacing="2">
+        ARCHITECTURE: PROMPTMATRIX SWARM &amp; AUTONOMOUS REVOPS PIPELINE
+      </text>
+      <text x="1020" y="14" text-anchor="end" class="mono" font-size="10.5" fill="#64748b" letter-spacing="1">
+        LATENCY: &lt;5ms // 25+ NODES ACTIVE
+      </text>
+    </g>
+
+    <!-- Conduit Connections (Wires) -->
+    <g fill="none" stroke-width="2">
+      <!-- Ingestion to Control Plane -->
+      <path d="M 210 240 L 360 240" stroke="#00f2fe" class="flow-line" opacity="0.8"/>
+      <!-- Control Plane to Agent Node 1 (Supervisor) -->
+      <path d="M 590 210 L 670 210 L 720 150 L 770 150" stroke="#c084fc" class="flow-line" opacity="0.85"/>
+      <!-- Control Plane to Agent Node 2 (Enrichment) -->
+      <path d="M 590 240 L 770 240" stroke="#34d399" class="flow-line" opacity="0.85"/>
+      <!-- Control Plane to Agent Node 3 (Action / SDR) -->
+      <path d="M 590 270 L 670 270 L 720 330 L 770 330" stroke="#fbbf24" class="flow-line" opacity="0.85"/>
+      <!-- Agents to Execution Destination -->
+      <path d="M 940 150 L 980 150 L 1000 210 L 1000 240" stroke="#38bdf8" opacity="0.5"/>
+      <path d="M 940 240 L 1000 240" stroke="#38bdf8" opacity="0.5"/>
+      <path d="M 940 330 L 980 330 L 1000 270 L 1000 240" stroke="#38bdf8" opacity="0.5"/>
+      <!-- Execution Feedback Loop back to Control Plane -->
+      <path d="M 1000 240 L 1030 240 L 1030 420 L 475 420 L 475 350" stroke="#00f2fe" stroke-dasharray="4 4" opacity="0.4"/>
+    </g>
+
+    <!-- Animated Data Packets Travelling along lines -->
+    <circle cx="0" cy="0" r="4.5" fill="#00f2fe" filter="url(#glowBloom)" style="animation: packetMove1 3s ease-in-out infinite;"/>
+    <circle cx="0" cy="0" r="4.5" fill="#c084fc" filter="url(#glowBloom)" style="animation: packetMove2 3.5s ease-in-out infinite; animation-delay: 0.8s;"/>
+    <circle cx="0" cy="0" r="4.5" fill="#fbbf24" filter="url(#glowBloom)" style="animation: packetMove3 4s ease-in-out infinite; animation-delay: 1.2s;"/>
+
+    <!-- ==================== COLUMN 1: SIGNAL INGESTION ==================== -->
+    <g transform="translate(40, 140)">
+      <rect width="170" height="200" rx="10" fill="#050e1e" stroke="#00f2fe" stroke-width="1.2" opacity="0.9"/>
+      <!-- Header -->
+      <path d="M 0 10 Q 0 0 10 0 L 160 0 Q 170 0 170 10 L 170 38 L 0 38 Z" fill="#0c233c"/>
+      <text x="85" y="24" text-anchor="middle" class="mono" font-size="11" font-weight="700" fill="#38bdf8">01 // SIGNAL INGEST</text>
+
+      <!-- Content Items -->
+      <g transform="translate(12, 56)">
+        <rect width="146" height="30" rx="5" fill="#07172b" stroke="#1e3a5f" stroke-width="0.8"/>
+        <text x="10" y="19" class="mono" font-size="10" fill="#94a3b8">Intent Webhooks</text>
+      </g>
+      <g transform="translate(12, 94)">
+        <rect width="146" height="30" rx="5" fill="#07172b" stroke="#1e3a5f" stroke-width="0.8"/>
+        <text x="10" y="19" class="mono" font-size="10" fill="#94a3b8">6sense / Clay Stream</text>
+      </g>
+      <g transform="translate(12, 132)">
+        <rect width="146" height="30" rx="5" fill="#07172b" stroke="#1e3a5f" stroke-width="0.8"/>
+        <text x="10" y="19" class="mono" font-size="10" fill="#94a3b8">Form &amp; API Payloads</text>
+      </g>
+      <text x="85" y="185" text-anchor="middle" class="mono" font-size="9" fill="#00f2fe">DISPATCH: &lt;90 SEC</text>
+    </g>
+
+    <!-- ==================== COLUMN 2: PROMPTMATRIX CONTROL PLANE ==================== -->
+    <g transform="translate(360, 110)">
+      <rect width="230" height="260" rx="12" fill="#090a1f" stroke="#818cf8" stroke-width="1.8" filter="url(#glowBloom)"/>
+      <!-- Header -->
+      <path d="M 0 12 Q 0 0 12 0 L 218 0 Q 230 0 230 12 L 230 46 L 0 46 Z" fill="#1e1b4b"/>
+      <polygon points="20,24 25,16 30,24 25,32" fill="#00f2fe"/>
+      <text x="38" y="27" class="mono" font-size="12" font-weight="800" fill="#e0e7ff" letter-spacing="1">PROMPTMATRIX CORE</text>
+      <text x="38" y="39" class="mono" font-size="9" fill="#a5b4fc">Dynamic Swarm Control Plane</text>
+
+      <!-- Inner Control Modules -->
+      <g transform="translate(14, 58)">
+        <rect width="202" height="36" rx="6" fill="#131238" stroke="#3730a3" stroke-width="1"/>
+        <text x="10" y="16" class="sans" font-size="10.5" font-weight="700" fill="#c7d2fe">Live Behavior Registry</text>
+        <text x="10" y="29" class="mono" font-size="8.5" fill="#818cf8">Hot-patch prompts with zero downtime</text>
+      </g>
+
+      <g transform="translate(14, 102)">
+        <rect width="202" height="36" rx="6" fill="#131238" stroke="#3730a3" stroke-width="1"/>
+        <text x="10" y="16" class="sans" font-size="10.5" font-weight="700" fill="#38bdf8">Sub-5ms In-Memory Cache</text>
+        <text x="10" y="29" class="mono" font-size="8.5" fill="#00f2fe">Zero-alloc token templating</text>
+      </g>
+
+      <g transform="translate(14, 146)">
+        <rect width="202" height="36" rx="6" fill="#131238" stroke="#3730a3" stroke-width="1"/>
+        <text x="10" y="16" class="sans" font-size="10.5" font-weight="700" fill="#34d399">Enterprise Guardrails</text>
+        <text x="10" y="29" class="mono" font-size="8.5" fill="#6ee7b7">AES-256 GCM + Drift Detection</text>
+      </g>
+
+      <g transform="translate(14, 190)">
+        <rect width="202" height="36" rx="6" fill="#131238" stroke="#3730a3" stroke-width="1"/>
+        <text x="10" y="16" class="sans" font-size="10.5" font-weight="700" fill="#fbbf24">SDK &amp; CLI Interop</text>
+        <text x="10" y="29" class="mono" font-size="8.5" fill="#fcd34d">Zero-dep Python / Offline Eval</text>
+      </g>
+
+      <!-- Status Footer inside Control Plane -->
+      <text x="115" y="248" text-anchor="middle" class="mono" font-size="9.5" font-weight="600" fill="#a5b4fc">
+        GOVERNANCE ENGINE: ACTIVE
+      </text>
+    </g>
+
+    <!-- ==================== COLUMN 3: MULTI-AGENT SWARM ==================== -->
+    <!-- Agent Node 1: Supervisor / Decomposer -->
+    <g transform="translate(770, 115)">
+      <rect width="170" height="70" rx="8" fill="#160d2b" stroke="#a855f7" stroke-width="1.2"/>
+      <circle cx="18" cy="22" r="5" fill="#c084fc"/>
+      <text x="32" y="26" class="mono" font-size="11" font-weight="700" fill="#e9d5ff">SUPERVISOR AGENT</text>
+      <text x="18" y="44" class="sans" font-size="9.5" fill="#cbd5e1">Decomposition &amp; Task Graph</text>
+      <text x="18" y="58" class="mono" font-size="8.5" fill="#a855f7">Model: Claude 3.7 / GPT-4o</text>
+    </g>
+
+    <!-- Agent Node 2: Intelligence & Enrichment -->
+    <g transform="translate(770, 205)">
+      <rect width="170" height="70" rx="8" fill="#061c16" stroke="#10b981" stroke-width="1.2"/>
+      <circle cx="18" cy="22" r="5" fill="#34d399"/>
+      <text x="32" y="26" class="mono" font-size="11" font-weight="700" fill="#a7f3d0">ENRICHMENT AGENT</text>
+      <text x="18" y="44" class="sans" font-size="9.5" fill="#cbd5e1">Deep Persona &amp; Tech Graph</text>
+      <text x="18" y="58" class="mono" font-size="8.5" fill="#34d399">Model: Gemini 2.5 Pro</text>
+    </g>
+
+    <!-- Agent Node 3: Dispatch & RevOps Orchestrator -->
+    <g transform="translate(770, 295)">
+      <rect width="170" height="70" rx="8" fill="#241505" stroke="#f59e0b" stroke-width="1.2"/>
+      <circle cx="18" cy="22" r="5" fill="#fbbf24"/>
+      <text x="32" y="26" class="mono" font-size="11" font-weight="700" fill="#fde68a">REVOPS DISPATCH</text>
+      <text x="18" y="44" class="sans" font-size="9.5" fill="#cbd5e1">Routing &amp; Dynamic Sequence</text>
+      <text x="18" y="58" class="mono" font-size="8.5" fill="#fbbf24">Target: CRM / Outbound SDR</text>
+    </g>
+
+    <!-- ==================== COLUMN 4: VERIFICATION & REVENUE IMPACT ==================== -->
+    <g transform="translate(970, 160)">
+      <rect width="90" height="160" rx="8" fill="#040b18" stroke="#00f2fe" stroke-width="1" stroke-dasharray="3 3"/>
+      <text x="45" y="32" text-anchor="middle" class="mono" font-size="10" font-weight="700" fill="#38bdf8">DESTINATION</text>
+      <text x="45" y="65" text-anchor="middle" class="sans" font-size="9" fill="#94a3b8">HubSpot CRM</text>
+      <text x="45" y="88" text-anchor="middle" class="sans" font-size="9" fill="#94a3b8">Salesforce</text>
+      <text x="45" y="111" text-anchor="middle" class="sans" font-size="9" fill="#94a3b8">Slack / Alerts</text>
+      <text x="45" y="140" text-anchor="middle" class="mono" font-size="8.5" font-weight="700" fill="#34d399">ROAS 3.8x</text>
+    </g>
+
+    <!-- Bottom Telemetry Banner in Diagram -->
+    <g transform="translate(40, 436)">
+      <text x="0" y="18" class="mono" font-size="10.5" fill="#64748b">
+        ⬡ <tspan fill="#00f2fe">Deterministic Evaluation:</tspan> 6-Dimension Offline LLM-as-a-Judge · In-Flight Latency Optimization · Zero Drifting Risk
+      </text>
+    </g>
+  </g>
+</svg>

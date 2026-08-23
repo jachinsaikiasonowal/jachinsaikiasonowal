@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="100%" height="100%">
+  <defs>
+    <radialGradient id="siliconBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#051717" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#02090b" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#010405" stop-opacity="1"/>
+    </radialGradient>
+
+    <linearGradient id="emeraldGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <linearGradient id="amberGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <filter id="siliconGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="siliconClip">
+      <rect x="0" y="0" width="1100" height="360" rx="12" ry="12"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    @keyframes clockPulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; filter: drop-shadow(0 0 10px rgba(52, 211, 153, 0.8)); }
+    }
+    @keyframes pipeStep {
+      0% { stroke-dashoffset: 80; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes chipShine {
+      0%, 100% { opacity: 0.15; }
+      50% { opacity: 0.4; }
+    }
+
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
+    .sans { font-family: 'SF Pro Display', -apple-system, Roboto, sans-serif; }
+    .clk-active { animation: clockPulse 2s ease-in-out infinite; }
+    .pipe-conduit { stroke-dasharray: 6 6; animation: pipeStep 4s linear infinite; }
+    .chip-glow { animation: chipShine 3s ease-in-out infinite; }
+  </style>
+
+  <g clip-path="url(#siliconClip)">
+    <rect width="1100" height="360" fill="url(#siliconBg)"/>
+
+    <!-- PCB Grid Traces -->
+    <g stroke="#064e3b" stroke-width="0.7" opacity="0.35">
+      <line x1="0" y1="60" x2="1100" y2="60"/>
+      <line x1="0" y1="300" x2="1100" y2="300"/>
+      <line x1="220" y1="0" x2="220" y2="360"/>
+      <line x1="440" y1="0" x2="440" y2="360"/>
+      <line x1="660" y1="0" x2="660" y2="360"/>
+      <line x1="880" y1="0" x2="880" y2="360"/>
+    </g>
+
+    <!-- Header Section -->
+    <g transform="translate(40, 36)">
+      <polygon points="10,12 18,4 26,12 18,20" fill="#34d399" class="clk-active" filter="url(#siliconGlow)"/>
+      <text x="36" y="16" class="mono" font-size="12" font-weight="700" fill="#34d399" letter-spacing="2">
+        SILICON ARCHITECTURE // RV32I 5-STAGE PIPELINE &amp; MEMORY RUNTIME
+      </text>
+      <text x="1020" y="16" text-anchor="end" class="mono" font-size="10.5" fill="#64748b" letter-spacing="1">
+        ISA: RISC-V RV32I · C99 · POSIX
+      </text>
+    </g>
+
+    <!-- Pipeline Connecting Bus Lines -->
+    <g fill="none" stroke="#34d399" stroke-width="2" opacity="0.8">
+      <line x1="200" y1="140" x2="240" y2="140" class="pipe-conduit"/>
+      <line x1="400" y1="140" x2="440" y2="140" class="pipe-conduit"/>
+      <line x1="600" y1="140" x2="640" y2="140" class="pipe-conduit"/>
+      <line x1="800" y1="140" x2="840" y2="140" class="pipe-conduit"/>
+      
+      <!-- Hazard Forwarding Bus Line -->
+      <path d="M 720 190 L 720 220 L 520 220 L 520 190" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7"/>
+      <text x="620" y="235" text-anchor="middle" class="mono" font-size="9" fill="#fbbf24">HAZARD FORWARDING UNIT</text>
+    </g>
+
+    <!-- ==================== 5 PIPELINE STAGES ==================== -->
+
+    <!-- STAGE 1: IF (Fetch) -->
+    <g transform="translate(40, 80)">
+      <rect width="160" height="110" rx="8" fill="#031f18" stroke="#059669" stroke-width="1.2"/>
+      <rect width="160" height="26" rx="8" fill="#064e3b"/>
+      <text x="80" y="17" text-anchor="middle" class="mono" font-size="11" font-weight="700" fill="#a7f3d0">01 // IF (FETCH)</text>
+      <text x="12" y="48" class="mono" font-size="10" fill="#f8fafc">Program Counter</text>
+      <text x="12" y="66" class="mono" font-size="9" fill="#34d399">PC &lt;= PC + 4</text>
+      <text x="12" y="86" class="mono" font-size="9" fill="#94a3b8">Inst Memory Bus</text>
+      <text x="12" y="100" class="mono" font-size="8.5" fill="#64748b">Bare-metal ROM</text>
+    </g>
+
+    <!-- STAGE 2: ID (Decode) -->
+    <g transform="translate(240, 80)">
+      <rect width="160" height="110" rx="8" fill="#031f18" stroke="#059669" stroke-width="1.2"/>
+      <rect width="160" height="26" rx="8" fill="#064e3b"/>
+      <text x="80" y="17" text-anchor="middle" class="mono" font-size="11" font-weight="700" fill="#a7f3d0">02 // ID (DECODE)</text>
+      <text x="12" y="48" class="mono" font-size="10" fill="#f8fafc">Register File (x0-x31)</text>
+      <text x="12" y="66" class="mono" font-size="9" fill="#34d399">Immediate Gen</text>
+      <text x="12" y="86" class="mono" font-size="9" fill="#94a3b8">Control Decoder</text>
+      <text x="12" y="100" class="mono" font-size="8.5" fill="#64748b">Branch Comparator</text>
+    </g>
+
+    <!-- STAGE 3: EX (Execute) -->
+    <g transform="translate(440, 80)">
+      <rect width="160" height="110" rx="8" fill="#031f18" stroke="#10b981" stroke-width="1.5" filter="url(#siliconGlow)"/>
+      <rect width="160" height="26" rx="8" fill="#047857"/>
+      <text x="80" y="17" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#ffffff">03 // EX (ALU)</text>
+      <text x="12" y="48" class="mono" font-size="10" fill="#f8fafc">32-Bit Arithmetic</text>
+      <text x="12" y="66" class="mono" font-size="9" fill="#34d399">ADD / SUB / SHIFT</text>
+      <text x="12" y="86" class="mono" font-size="9" fill="#94a3b8">Branch Target Calc</text>
+      <text x="12" y="100" class="mono" font-size="8.5" fill="#fbbf24">Zero Flag Evaluator</text>
+    </g>
+
+    <!-- STAGE 4: MEM (Memory) -->
+    <g transform="translate(640, 80)">
+      <rect width="160" height="110" rx="8" fill="#031f18" stroke="#059669" stroke-width="1.2"/>
+      <rect width="160" height="26" rx="8" fill="#064e3b"/>
+      <text x="80" y="17" text-anchor="middle" class="mono" font-size="11" font-weight="700" fill="#a7f3d0">04 // MEM (ACCESS)</text>
+      <text x="12" y="48" class="mono" font-size="10" fill="#f8fafc">Data RAM / Cache</text>
+      <text x="12" y="66" class="mono" font-size="9" fill="#34d399">Load / Store Buffer</text>
+      <text x="12" y="86" class="mono" font-size="9" fill="#94a3b8">Alignment Check</text>
+      <text x="12" y="100" class="mono" font-size="8.5" fill="#64748b">MMIO (UART / VGA)</text>
+    </g>
+
+    <!-- STAGE 5: WB (Writeback) -->
+    <g transform="translate(840, 80)">
+      <rect width="220" height="110" rx="8" fill="#031f18" stroke="#059669" stroke-width="1.2"/>
+      <rect width="220" height="26" rx="8" fill="#064e3b"/>
+      <text x="110" y="17" text-anchor="middle" class="mono" font-size="11" font-weight="700" fill="#a7f3d0">05 // WB (COMMIT)</text>
+      <text x="12" y="48" class="mono" font-size="10" fill="#f8fafc">Register Writeback</text>
+      <text x="12" y="66" class="mono" font-size="9" fill="#34d399">Destination Sync [rd]</text>
+      <text x="12" y="86" class="mono" font-size="9" fill="#94a3b8">Pipeline Flush Control</text>
+      <text x="12" y="100" class="mono" font-size="8.5" fill="#64748b">Zero Hazard Stall</text>
+    </g>
+
+    <!-- ==================== LOWER MODULES: MEMORY LAB & UNIX KERNEL ==================== -->
+    <!-- Lower Module 1: Custom Bump Allocator & Memory Lab -->
+    <g transform="translate(40, 255)">
+      <rect width="480" height="75" rx="8" fill="#021411" stroke="#0d9488" stroke-width="1"/>
+      <text x="16" y="24" class="mono" font-size="11" font-weight="700" fill="#2dd4bf">
+        🧪 MEMORY LAB // CUSTOM STATIC BUMP ALLOCATOR
+      </text>
+      <text x="16" y="44" class="sans" font-size="10" fill="#cbd5e1">
+        Zero-fragmentation static pool · Cache line alignment (64B) · Real-time leak tracer
+      </text>
+      <text x="16" y="62" class="mono" font-size="9" fill="#0d9488">
+        Tested on RV32I emulated environments &amp; bare-metal firmware
+      </text>
+    </g>
+
+    <!-- Lower Module 2: POSIX Mini-Shell in C -->
+    <g transform="translate(540, 255)">
+      <rect width="520" height="75" rx="8" fill="#021411" stroke="#0d9488" stroke-width="1"/>
+      <text x="16" y="24" class="mono" font-size="11" font-weight="700" fill="#2dd4bf">
+        🐚 MINI-SHELL IN C // POSIX PROCESS SUPERVISOR
+      </text>
+      <text x="16" y="44" class="sans" font-size="10" fill="#cbd5e1">
+        UNIX fork/exec engine · Bidirectional pipe multiplexing · Background job controller
+      </text>
+      <text x="16" y="62" class="mono" font-size="9" fill="#0d9488">
+        Pure C99 stdlib implementation · Signal handling (SIGINT/SIGTSTP/SIGCHLD)
+      </text>
+    </g>
+  </g>
+</svg>
