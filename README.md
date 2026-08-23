@@ -53,7 +53,7 @@
 ### ⚡ System Core Kernel & Telemetry Terminal HUD
 
 <p align="center">
-  <img src="./assets/system_core_hud.svg" alt="System Core Terminal HUD" width="100%">
+  <img src="./assets/system_kernel_matrix.svg" alt="System Core Terminal HUD" width="100%">
 </p>
 
 ---
